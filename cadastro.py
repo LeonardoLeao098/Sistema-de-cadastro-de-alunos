@@ -21,7 +21,6 @@ def cadastrar_pessoa():
     pessoa['email'] = input("Email: ")
     pessoa['endereco'] = input("Endereço: ")
     pessoa['idade'] = input("Idade: ")
-
     pessoa['nota1'] = input("Nota 1: ")
     pessoa['nota2'] = input("Nota 2: ")
     pessoa['trabalho'] = input("Nota do trabalho: ")
