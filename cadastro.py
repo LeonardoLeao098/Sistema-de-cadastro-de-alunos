@@ -1,5 +1,6 @@
 import json
 import os
+import gatpass
 
 ARQUIVO = 'dados.json'
 
@@ -26,7 +27,7 @@ def cadastrar_pessoa():
     pessoa['trabalho'] = input("Nota do trabalho: ")
 
     while True:
-        senha = input("Crie uma senha (mínimo 8 caracteres): ").strip()
+        senha = getpass.getpass("Crie uma senha (mínimo 8 caracteres): ").strip()
         if len(senha) >= 8:
             pessoa['senha'] = senha
             break
